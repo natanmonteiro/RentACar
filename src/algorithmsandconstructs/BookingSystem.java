@@ -26,9 +26,6 @@ public class BookingSystem implements BookingSystemInterface {
             day = in.readLine();
             System.out.println(day);
 
-           // Car item = new Car(makeCar, content);
-          //  feed.addItem(item);
-
             month = in.readLine();
         }
 

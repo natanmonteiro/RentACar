@@ -22,6 +22,10 @@ public class RentACar implements RentACarInterface{
         this.numberOfCars = numberOfCars;
     }
 
+    RentACar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     @Override
     public List<CarInterface> getCars() {
         return this.cars;
