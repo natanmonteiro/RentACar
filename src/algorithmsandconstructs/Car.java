@@ -17,10 +17,15 @@ public class Car implements CarInterface{
     public Make makeCar;
     public double dailyRate;
     public int id;
-    public Map<Month, boolean[]> calendarOfAvailability = new HashMap();
+    public Map<Month, boolean[]> calendarOfAvailability;
 
     @Override
     public Map<Month, boolean[]> createAvailability() {
+        
+        calendarOfAvailability = new HashMap<>();
+        
+        calendarOfAvailability.put(Month.JANUARY, new boolean[Month.JANUARY.getNumberOfDays()]);
+       
         return null;
     }
 

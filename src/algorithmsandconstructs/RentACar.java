@@ -54,7 +54,13 @@ public class RentACar implements RentACarInterface{
 
     @Override
     public boolean bookCar(Month month, int day, Make make, int lengthOfRent) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (checkAvailability(month, day, make, lengthOfRent) == false) {
+            System.out.println("Car booked");
+            return true;
+        } else {
+            System.out.println("Car not available");
+            return false;
+        }
     }
 
     @Override
