@@ -16,16 +16,6 @@ public class RentACar implements RentACarInterface{
     private String name;
     private int numberOfCars;
 
-    public RentACar(List<CarInterface> cars, String name, int numberOfCars) {
-        this.cars = cars;
-        this.name = name;
-        this.numberOfCars = numberOfCars;
-    }
-
-    RentACar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     @Override
     public List<CarInterface> getCars() {
         return this.cars;
@@ -63,7 +53,7 @@ public class RentACar implements RentACarInterface{
             return true;
         } else {
             System.out.println("Car not available");
-            return false;
+            return true;
         }
     }
 
