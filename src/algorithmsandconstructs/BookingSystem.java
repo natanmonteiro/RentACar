@@ -15,24 +15,24 @@ public class BookingSystem implements BookingSystemInterface {
     public RentACarInterface setupRentACar(BufferedReader in) throws IOException {
 
         //Declaring variables
-        String cars = in.readLine();
-        String content = "";
+        String month = in.readLine();
+        String day = "";
 
-        RentACarInterface feed = new RentACar();
+        RentACarInterface book = new RentACar();
         
         //Loop to read line of feed
-        while (cars != null) {
-            System.out.println(cars);
-            content = in.readLine();
-            System.out.println(content);
+        while (month != null) {
+            System.out.println(month);
+            day = in.readLine();
+            System.out.println(day);
 
            // Car item = new Car(makeCar, content);
           //  feed.addItem(item);
 
-            cars = in.readLine();
+            month = in.readLine();
         }
 
-        return feed;
+        return book;
 
     }
 

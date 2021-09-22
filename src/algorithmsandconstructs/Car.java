@@ -21,7 +21,7 @@ public class Car implements CarInterface{
 
     @Override
     public Map<Month, boolean[]> createAvailability() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return null;
     }
 
     //Getter method that returns Make
@@ -50,12 +50,12 @@ public class Car implements CarInterface{
 
     @Override
     public Map<Month, boolean[]> getAvailability() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return calendarOfAvailability;
     }
 
     @Override
     public void setAvailability(Map<Month, boolean[]> availability) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.calendarOfAvailability = availability;
     }
 
     @Override

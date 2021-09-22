@@ -1,3 +1,9 @@
+/*
+@name: Natan Souza and Gabriel Jucá
+@date: 22th Sep 2021
+BookingSystemInterface.java
+ */
+
 package algorithmsandconstructs;
 
 import java.io.BufferedReader;
