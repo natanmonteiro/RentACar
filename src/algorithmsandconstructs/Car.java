@@ -13,7 +13,7 @@ import java.util.Map;
 //CarInterface is an abstract class and needs a "main" class that will implement its methods and attributes 
 public class Car implements CarInterface{
     
-    //Atrributes of the class Car. A car has a make, a daily rate, and ID and a calendar of availability
+    //Attributes of the class Car. A car has a make, a daily rate, and ID and a calendar of availability
     public Make makeCar;
     public double dailyRate;
     public int id;
