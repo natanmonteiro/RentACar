@@ -26,8 +26,8 @@ public class BookingSystem implements BookingSystemInterface {
             content = in.readLine();
             System.out.println(content);
 
-            Car item = new Car(cars, content);
-            feed.addItem(item);
+           // Car item = new Car(makeCar, content);
+          //  feed.addItem(item);
 
             cars = in.readLine();
         }
