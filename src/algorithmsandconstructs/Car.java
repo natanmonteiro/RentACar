@@ -7,33 +7,45 @@ package algorithmsandconstructs;
 
 import algorithmsandconstructs.enums.Make;
 import algorithmsandconstructs.enums.Month;
+import java.util.HashMap;
 import java.util.Map;
 
+//CarInterface is an abstract class and needs a "main" class that will implement its methods and attributes 
 public class Car implements CarInterface{
+    
+    //Atrributes of the class Car. A car has a make, a daily rate, and ID and a calendar of availability
+    public Make makeCar;
+    public double dailyRate;
+    public int id;
+    public Map<Month, boolean[]> calendarOfAvailability = new HashMap();
 
     @Override
     public Map<Month, boolean[]> createAvailability() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    //Getter method that returns Make
     @Override
     public Make getMake() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return makeCar;
     }
-
+    
+    //Setter method that change Make
     @Override
     public void setMake(Make make) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.makeCar = make;
     }
-
+    
+    //Getter method that returns dailyRate
     @Override
     public double getRate() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return dailyRate;
     }
-
+    
+    //Setter method that changes dailyRate
     @Override
     public void setRate(double rate) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.dailyRate = rate;
     }
 
     @Override
@@ -48,7 +60,7 @@ public class Car implements CarInterface{
 
     @Override
     public int getId() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return id;
     }
 
     @Override
