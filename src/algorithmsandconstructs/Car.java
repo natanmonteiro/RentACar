@@ -18,15 +18,27 @@ public class Car implements CarInterface{
     public double dailyRate;
     public int id;
     public Map<Month, boolean[]> calendarOfAvailability;
-
+    
+    //Method that creates the map of availability for the entire year based on the number of days of each month
     @Override
     public Map<Month, boolean[]> createAvailability() {
         
         calendarOfAvailability = new HashMap<>();
         
         calendarOfAvailability.put(Month.JANUARY, new boolean[Month.JANUARY.getNumberOfDays()]);
+        calendarOfAvailability.put(Month.FEBRUARY, new boolean[Month.FEBRUARY.getNumberOfDays()]);
+        calendarOfAvailability.put(Month.MARCH, new boolean[Month.MARCH.getNumberOfDays()]);
+        calendarOfAvailability.put(Month.APRIL, new boolean[Month.APRIL.getNumberOfDays()]);
+        calendarOfAvailability.put(Month.MAY, new boolean[Month.MAY.getNumberOfDays()]);
+        calendarOfAvailability.put(Month.JUNE, new boolean[Month.JUNE.getNumberOfDays()]);
+        calendarOfAvailability.put(Month.JULY, new boolean[Month.JULY.getNumberOfDays()]);
+        calendarOfAvailability.put(Month.AUGUST, new boolean[Month.AUGUST.getNumberOfDays()]);
+        calendarOfAvailability.put(Month.SEPTEMBER, new boolean[Month.SEPTEMBER.getNumberOfDays()]);
+        calendarOfAvailability.put(Month.OCTOBER, new boolean[Month.OCTOBER.getNumberOfDays()]);
+        calendarOfAvailability.put(Month.NOVEMBER, new boolean[Month.NOVEMBER.getNumberOfDays()]);
+        calendarOfAvailability.put(Month.DECEMBER, new boolean[Month.DECEMBER.getNumberOfDays()]);
        
-        return null;
+        return calendarOfAvailability;
     }
 
     //Getter method that returns Make
@@ -74,6 +86,7 @@ public class Car implements CarInterface{
     @Override
     public boolean isAvailable(Month month, int day) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //if (calendarOfAvailability<month, >
     }
 
     @Override
