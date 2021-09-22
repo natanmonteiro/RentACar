@@ -47,17 +47,20 @@ public class Car implements CarInterface{
     public void setRate(double rate) {
         this.dailyRate = rate;
     }
-
+    
+    //Getter method that returns calendarOfAvailability
     @Override
     public Map<Month, boolean[]> getAvailability() {
         return calendarOfAvailability;
     }
-
+    
+    //Setter method that changes calendarOfAvailability
     @Override
     public void setAvailability(Map<Month, boolean[]> availability) {
         this.calendarOfAvailability = availability;
     }
-
+    
+    //Getter method that returns id
     @Override
     public int getId() {
         return id;
