@@ -82,16 +82,18 @@ public class Car implements CarInterface{
     public int getId() {
         return id;
     }
-
+    
+    //Method to check if the car is available
     @Override
     public boolean isAvailable(Month month, int day) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        //if (calendarOfAvailability<month, >
     }
-
+  
+    //Method to book a car
     @Override
     public boolean book(Month month, int day) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
     }
     
 }
