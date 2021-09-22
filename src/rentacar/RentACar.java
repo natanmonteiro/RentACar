@@ -18,10 +18,8 @@ import java.io.IOException;
 
 // INCLUDE HERE THE LINK TO THE GIT REPOSITORY AS A COMMENT!!!!
 
-/**
- *
- * @author apont
- */
+//Comment
+
 public class RentACar {
 
     /**
