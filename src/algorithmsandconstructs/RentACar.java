@@ -9,26 +9,37 @@ import algorithmsandconstructs.enums.Make;
 import algorithmsandconstructs.enums.Month;
 import java.util.List;
 
+//Implements RentACarInterface
 public class RentACar implements RentACarInterface{
+
+    private List<CarInterface> cars;
+    private String name;
+    private int numberOfCars;
+
+    public RentACar(List<CarInterface> cars, String name, int numberOfCars) {
+        this.cars = cars;
+        this.name = name;
+        this.numberOfCars = numberOfCars;
+    }
 
     @Override
     public List<CarInterface> getCars() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return this.cars;
     }
 
     @Override
     public void setCars(List<CarInterface> cars) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.cars = cars;
     }
 
     @Override
     public String getName() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return this.name;
     }
 
     @Override
     public void setName(String name) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.name = name;
     }
 
     @Override
@@ -48,7 +59,7 @@ public class RentACar implements RentACarInterface{
 
     @Override
     public int getNumberOfCars() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return this.numberOfCars;
     }
     
 }
